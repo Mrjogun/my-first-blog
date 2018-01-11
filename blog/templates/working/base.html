@@ -80,8 +80,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>
 									<a href="{% url 'courses' %}" class="effect-3">Courses</a>
 								</li>
-								<li>
-									<a href="{% url 'join' %}" class="effect-3">Join Us</a>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lecture
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="{% url 'Lecture_NP_1' %}">Network Programming-1</a>
+										</li>
+										<li>
+											<a href="{% url 'Lecture_NP_2' %}">Network Programming-2</a>
+										</li>
+										<li>
+											<a href="{% url 'Lecture_GS' %}">Graduate School</a>
+										</li>
+									</ul>
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages

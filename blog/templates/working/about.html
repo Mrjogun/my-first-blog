@@ -1,6 +1,11 @@
 {% extends 'working/base.html' %}
 
 {% block content %}
+	<!-- banner -->
+	<div class="inner_page_agile">
+
+	</div>
+	<!--//banner -->
 	<!-- about -->
 	<div class="about-sec" id="about">
 		<div class="container">
@@ -22,7 +27,7 @@
 					이러한 사회에 발맞추어 경기대학교 컴퓨터공학부 (Network System) 연구실에서는 보다 자유롭고 활발한 
 					정보 교류를 통해 인간 감성과 IT 기술이 경합한 최신 인터넷 기술에 대한 연구를 수행하고 있습니다.</p>
 					<p>이를 위해 본 연구실에서는 김남기 교수님과 이우식 교수님의 지도로 석박사 과정 대학원생 및 학부 연구생들이 최신 인터넷 기술 (IoT, SDN, WiFi, 5G, Embedded System, 등)을 함께 배우며 연구하고 있습니다. 그리고 대학원 연구를 위한 다양한 기초 학습 스터디와 공모전도 함께 실시하고 있습니다. 네트워크 연구실은 인터넷 최신 기술을 함께 배우고 연구할 수 있는 의욕적인 학부생들을 언제나 기다리고 있습니다. 네트워크 연구실에 대해 좀 더 알고 싶은 사람은 언제나 교수님이나 연구실 소속 학생들에게 문의 바랍니다. 문은 두드리는 사람에게만 열릴 것입니다.</p>
-					<a class="button-style" href="join.html">Join Now</a>
+					<a class="button-style" href="{% url 'join' %}">Join Now</a>
 				</div>
 				<!-- Stats-->
 				<div class="col-md-6 about2-info">

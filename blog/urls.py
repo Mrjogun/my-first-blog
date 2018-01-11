@@ -11,6 +11,11 @@ urlpatterns = [
 	url(r'^gallery/$', views.gallery, name='gallery'),
 	url(r'^contact/$', views.contact, name='contact'),
 	url(r'^login/$', views.login, name='login'),
+	url(r'^register/$', views.register, name='register'),
+
+	url(r'^lecture/NP_1$', views.Lecture_NP_1, name='Lecture_NP_1'),
+	url(r'^lecture/NP_2$', views.Lecture_NP_2, name='Lecture_NP_2'),
+	url(r'^lecture/GS$', views.Lecture_GS, name='Lecture_GS'),
 
 	url(r'^post/$', views.post_list, name='post_list'),
 	url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),

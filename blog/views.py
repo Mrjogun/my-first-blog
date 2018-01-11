@@ -39,6 +39,21 @@ def login(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'working/login.html', {'posts': posts})
 
+def register(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'working/register.html', {'posts': posts})
+
+def Lecture_NP_1(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'working/NP_1.html', {'posts': posts})
+
+def Lecture_NP_2(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'working/NP_2.html', {'posts': posts})
+
+def Lecture_GS(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'working/GS.html', {'posts': posts})
 
 
 def post_list(request):
